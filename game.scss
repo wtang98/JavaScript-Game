@@ -11,6 +11,7 @@ nav{
         text-decoration:underline;
     }
 }
+
 main{
     display: flex;
     justify-content: center;
@@ -19,8 +20,27 @@ main{
         border: solid black 1px;
         width: 99vw;
         height: 90vh;
-        &area{
-            
+        &__score{
+            height: 3vh;
+            width: 99vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__percentage{
+            border-bottom: solid black 1px;
+            height: 3vh;
+            width: 99vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__area{
+            height: 100px;
+            width: 100px;
+            border: solid 1px black;
+            border-radius: 90px;
+            background-color: orange;
         }
     }
 }

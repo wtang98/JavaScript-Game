@@ -23,6 +23,29 @@ main .game {
   width: 99vw;
   height: 90vh;
 }
+main .game__score {
+  height: 3vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .game__percentage {
+  border-bottom: solid black 1px;
+  height: 3vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .game__area {
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+  border-radius: 90px;
+  background-color: orange;
+}
+
 #footer {
   display: flex;
   align-items: center;
