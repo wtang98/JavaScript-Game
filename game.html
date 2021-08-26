@@ -5,32 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="game.css">
-    <script src="game.js"></script>
-    <title>Document</title>
+    <title>Reaction Aim Game</title>
 </head>
 <body>
     <nav>
         <h1>Reaction Aim Game</h1>
     </nav>
-
-
+    
     <main>
         <section class = "game">
-
-            <section class = "game__score">
-                <p>Your Reaction Time is:</p>
+            <section class = "game__instructions">
+                <p>
+                    Instructions: Click the blue circle to start. 
+                    After every click on the red circle click back on the blue circle
+                </p>
             </Section>
+            <div class = "game__score">
+                <p>Your Reaction Time is:</p>
+            </div>
             <Section class = "game__percentage">
                 <p>You are in the Top</p>
             </section>
-            <div class = "game__area">
-                <div class = "game__area-circle"></div>
+            
+            <div class = "game__play">
+                <div id = "game__play-initiator" class ="game__play-initiator"></div>
             </div>
-
+            <div id="game__play-circle" class = "game__play-circle" style="display:none"></div>
         </section>
     </main>
     <footer id = "footer">
         <p>by Wei-Tong Tang</p>
     </footer>
+    <script src="./game.js"></script>
 </body>
 </html>
