@@ -8,22 +8,25 @@ initiator.addEventListener("click", () => {
     target.style.display = ""
 });
 
-target.addEventListener("click", mover)
+target.addEventListener("click", mover);
 function mover() {
     target.style.position = "absolute";
     target.style.top = Math.floor(Math.random()*80)+'%';
     target.style.left = Math.floor(Math.random()*80)+'%';
 }
 
+let first
+target.addEventListener("click", timer);
+function timer (){
+    
+}
+
+
 let divClicks = 0;
 target.addEventListener("click", () => {
         divClicks +=1;
     if(divClicks === 10){
         target.style.display = "none";
-        score.innerHTML = `Your Reaction Time is: ${timeDiff}`
+        score.innerHTML = `Your Reaction Time is: ${timer}`
     }
 });
-
-function timer (){
-
-}

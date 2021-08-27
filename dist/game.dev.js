@@ -16,14 +16,17 @@ function mover() {
   target.style.left = Math.floor(Math.random() * 80) + '%';
 }
 
+var first;
+target.addEventListener("click", timer);
+
+function timer() {}
+
 var divClicks = 0;
 target.addEventListener("click", function () {
   divClicks += 1;
 
   if (divClicks === 10) {
     target.style.display = "none";
-    score.innerHTML = "Your Reaction Time is: ".concat(timeDiff);
+    score.innerHTML = "Your Reaction Time is: ".concat(timer);
   }
 });
-
-function timer() {}
