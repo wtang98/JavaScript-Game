@@ -5,7 +5,8 @@ var target = document.querySelector(".game__play-circle");
 var area = document.querySelector(".game__play");
 var score = document.querySelector(".game__score");
 var perCent = document.querySelector(".game__percentage");
-var instructions = document.querySelector(".game__instructions"); // removes blue and starts game
+var instructions = document.querySelector(".game__instructions");
+var restart = document.querySelector(".game__refresh"); // removes blue and starts game
 
 initiator.addEventListener("click", function () {
   initiator.style.display = "none";
@@ -17,7 +18,7 @@ target.addEventListener("click", mover);
 function mover() {
   target.style.position = "absolute";
   target.style.bottom = Math.floor(Math.random() * 80) + '%';
-  target.style.left = Math.floor(Math.random() * 80) + '%';
+  target.style.left = Math.floor(Math.random() * 90) + '%';
 } //makes game last 10 clicks
 
 
@@ -68,6 +69,7 @@ function getTime(startTime) {
 
   if (divClicks === 15) {
     score.style = "";
-    score.innerHTML += "".concat(avgTimeToTwoDp, "ms ");
+    score.innerHTML += " ".concat(avgTimeToTwoDp, "ms ");
+    restart.style.display = "";
   }
 }

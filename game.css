@@ -76,6 +76,18 @@ main .game__play-circle {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+main .game__refresh {
+  height: 60px;
+  width: 180px;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 10px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
 
 #footer {
   display: flex;

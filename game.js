@@ -4,6 +4,7 @@ const area = document.querySelector(".game__play")
 const score = document.querySelector(".game__score")
 const perCent = document.querySelector(".game__percentage")
 const instructions = document.querySelector(".game__instructions")
+const restart = document.querySelector(".game__refresh")
 
 // removes blue and starts game
 initiator.addEventListener("click", () => {
@@ -17,7 +18,7 @@ target.addEventListener("click", mover);
 function mover () {
     target.style.position = "absolute";
     target.style.bottom = Math.floor(Math.random()*80)+'%';
-    target.style.left = Math.floor(Math.random()*80)+'%';
+    target.style.left = Math.floor(Math.random()*90)+'%';
 }
 
 //makes game last 10 clicks
@@ -63,6 +64,7 @@ function getTime(startTime){
     const avgTimeToTwoDp = parseFloat(avgTime).toFixed(2);
     if(divClicks === 15){
         score.style = ""
-        score.innerHTML += `${avgTimeToTwoDp}ms `
+        score.innerHTML += ` ${avgTimeToTwoDp}ms `
+        restart.style.display = ""
     }
 }

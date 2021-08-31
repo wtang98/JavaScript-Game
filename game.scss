@@ -53,16 +53,16 @@ main{
         }
         &__play{
             &-initiator{
-            height: 100px;
-            width: 100px;
-            border: solid 1px black;
-            border-radius: 90px;
-            background-color: blue;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%)
+                height: 100px;
+                width: 100px;
+                border: solid 1px black;
+                border-radius: 90px;
+                background-color: blue;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
             }
             &-circle{
                 height: 100px;
@@ -77,6 +77,18 @@ main{
                 transform: translate(-50%, -50%)
             }
         }   
+        &__refresh{
+            height: 60px;
+            width: 180px;
+            background-color: white;
+            border: solid 1px black;
+            border-radius: 10px;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
     }
 }
 
@@ -98,3 +110,4 @@ main{
             margin-right: -50%;
             transform: translate(-50%, -50%)
 }
+
