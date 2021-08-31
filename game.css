@@ -31,6 +31,7 @@ main .game {
   height: 90vh;
 }
 main .game__instructions {
+  margin-top: 10px;
   font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: center;
@@ -45,7 +46,6 @@ main .game__score {
   align-items: center;
 }
 main .game__percentage {
-  border-bottom: solid black 1px;
   height: 3vh;
   width: 99vw;
   display: flex;
@@ -72,7 +72,6 @@ main .game__play-circle {
   border-radius: 90px;
   background-color: red;
   position: absolute;
-  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);

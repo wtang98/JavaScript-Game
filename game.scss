@@ -28,6 +28,7 @@ main{
         width: 99vw;
         height: 90vh;
         &__instructions{
+            margin-top: 10px;
             font-family: 'Courier New', Courier, monospace;
             display: flex;
             justify-content: center;
@@ -42,7 +43,7 @@ main{
             align-items: center;
         }
         &__percentage{
-            border-bottom: solid black 1px;
+            // border-bottom: solid black 1px;
             height: 3vh;
             width: 99vw;
             display: flex;
@@ -70,7 +71,7 @@ main{
                 border-radius: 90px;
                 background-color: red;
                 position: absolute;
-                top: 50%;
+                // top: 50%;
                 left: 50%;
                 margin-right: -50%;
                 transform: translate(-50%, -50%)
