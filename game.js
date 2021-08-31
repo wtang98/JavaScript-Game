@@ -21,12 +21,24 @@ function mover () {
     target.style.left = Math.floor(Math.random()*90)+'%';
 }
 
-//makes game last 10 clicks
+//makes game last 15 clicks and launches confetti on finish
 let divClicks = 0;
 target.addEventListener("click", () => {
     divClicks ++;
     if(divClicks === 15){
         target.style.display = "none";
+        // "use strict";
+        // var myCanvas = document.createElement('canvas');
+        // document.body.appendChild(myCanvas);
+        // var myConfetti = confetti.create(myCanvas, {
+        //     resize: true,
+        //     useWorker: true
+        // });
+        // myConfetti({
+        //     particleCount: 100,
+        //     spread: 160 // any other options from the global
+        // // confetti function
+    //     });
     }
 });
 
@@ -49,7 +61,7 @@ target.addEventListener('click', () =>{
     }
 });
 
-//starts timer
+//gets timer to count avg time in MS
 const timeInMs = target.addEventListener('click', startTimer());
 function startTimer(){
     startTime = new Date();
