@@ -28,13 +28,7 @@ target.addEventListener("click", function () {
   if (divClicks === 15) {
     target.style.display = "none";
   }
-}); //shows reaning clicks until game ends
-
-var remain = 15;
-target.addEventListener('click', function () {
-  remain--;
-  perCent.innerHTML = "remaining: ".concat(remain);
-}); // removes instructions & makse remaining counter visible
+}); // removes instructions & makes remaining counter visible
 
 initiator.addEventListener('click', show);
 
@@ -42,12 +36,19 @@ function show() {
   perCent.style.display = "";
   instructions.style.display = "none";
   perCent.innerHTML = "Remaining: 15";
+} //counts down remaining clicks until game ends
+
+
+var remain = 15;
+target.addEventListener('click', function () {
+  remain--;
+  perCent.innerHTML = "remaining: ".concat(remain);
 
   if (divClicks === 15) {
-    perCent.style.display = 'none';
+    perCent.style.display = "none";
+    score.classList.add("forceScoreCenter");
   }
-} //starts timer
-
+}); //starts timer
 
 var timeInMs = target.addEventListener('click', startTimer());
 
@@ -63,9 +64,10 @@ function getTime(startTime) {
   var endTime = new Date();
   var timer = endTime - startTime;
   var avgTime = timer / 15;
+  var avgTimeToTwoDp = parseFloat(avgTime).toFixed(2);
 
   if (divClicks === 15) {
     score.style = "";
-    score.innerHTML += "".concat(avgTime, "ms ");
+    score.innerHTML += "".concat(avgTimeToTwoDp, "ms ");
   }
 }
