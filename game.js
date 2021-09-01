@@ -1,3 +1,4 @@
+
 // import confetti from "canvas-confetti"
 const initiator = document.querySelector("#game__play-initiator")
 const target = document.querySelector(".game__play-circle")

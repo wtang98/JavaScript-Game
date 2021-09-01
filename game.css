@@ -66,11 +66,13 @@ main .game__play-initiator {
   transform: translate(-50%, -50%);
 }
 main .game__play-circle {
-  height: 100px;
-  width: 100px;
-  border: solid 1px black;
-  border-radius: 90px;
-  background-color: red;
+  height: 30px;
+  width: 30px;
+  padding: 1em;
+  border: solid 1em #c00;
+  border-radius: 50%;
+  background-color: #c00;
+  background-clip: content-box;
   position: absolute;
   left: 50%;
   margin-right: -50%;
