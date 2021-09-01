@@ -1,5 +1,6 @@
 "use strict";
 
+// import confetti from "canvas-confetti"
 var initiator = document.querySelector("#game__play-initiator");
 var target = document.querySelector(".game__play-circle");
 var area = document.querySelector(".game__play");
@@ -19,7 +20,7 @@ function mover() {
   target.style.position = "absolute";
   target.style.bottom = Math.floor(Math.random() * 80) + '%';
   target.style.left = Math.floor(Math.random() * 90) + '%';
-} //makes game last 10 clicks
+} //makes game last 15 clicks
 
 
 var divClicks = 0;
@@ -49,7 +50,7 @@ target.addEventListener('click', function () {
     perCent.style.display = "none";
     score.classList.add("forceScoreCenter");
   }
-}); //starts timer
+}); //gets timer to count avg time in MS a
 
 var timeInMs = target.addEventListener('click', startTimer());
 

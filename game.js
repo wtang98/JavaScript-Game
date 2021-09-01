@@ -1,3 +1,4 @@
+// import confetti from "canvas-confetti"
 const initiator = document.querySelector("#game__play-initiator")
 const target = document.querySelector(".game__play-circle")
 const area = document.querySelector(".game__play")
@@ -10,7 +11,6 @@ const restart = document.querySelector(".game__refresh")
 initiator.addEventListener("click", () => {
     initiator.style.display = "none"
     target.style.display = ""
-
 });
 
 //randomly moves the target circle
@@ -21,24 +21,12 @@ function mover () {
     target.style.left = Math.floor(Math.random()*90)+'%';
 }
 
-//makes game last 15 clicks and launches confetti on finish
+//makes game last 15 clicks
 let divClicks = 0;
 target.addEventListener("click", () => {
     divClicks ++;
     if(divClicks === 15){
         target.style.display = "none";
-        // "use strict";
-        // var myCanvas = document.createElement('canvas');
-        // document.body.appendChild(myCanvas);
-        // var myConfetti = confetti.create(myCanvas, {
-        //     resize: true,
-        //     useWorker: true
-        // });
-        // myConfetti({
-        //     particleCount: 100,
-        //     spread: 160 // any other options from the global
-        // // confetti function
-    //     });
     }
 });
 
@@ -61,7 +49,7 @@ target.addEventListener('click', () =>{
     }
 });
 
-//gets timer to count avg time in MS
+//gets timer to count avg time in MS a
 const timeInMs = target.addEventListener('click', startTimer());
 function startTimer(){
     startTime = new Date();
