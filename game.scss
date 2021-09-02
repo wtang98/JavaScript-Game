@@ -1,7 +1,9 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;   
+    background-color: grey; 
 }
+
 nav{
     display: flex;
     justify-content: center;
@@ -16,17 +18,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    #lol{
-        position: absolute;
-        width: 100px;
-        height: 70px;
-        background-color: #d2fcd9;   
-        border: 1px solid black;
-    }
     .game{
         border: solid black 1px;
         width: 99vw;
         height: 90vh;
+        margin-left: 1px;
+        margin-right: 1px;
         align-items: center;
         &__instructions{
             margin-top: 10px;
@@ -91,6 +88,9 @@ main{
             margin-right: -50%;
             transform: translate(-50%, -50%)
         }
+    }
+    .game__refresh{
+        background-color: darkgray;
     }
 }
 
