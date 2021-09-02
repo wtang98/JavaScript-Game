@@ -1,5 +1,4 @@
 
-// import confetti from "canvas-confetti"
 const initiator = document.querySelector("#game__play-initiator")
 const target = document.querySelector(".game__play-circle")
 const area = document.querySelector(".game__play")
@@ -7,6 +6,7 @@ const score = document.querySelector(".game__score")
 const perCent = document.querySelector(".game__percentage")
 const instructions = document.querySelector(".game__instructions")
 const restart = document.querySelector(".game__refresh")
+
 
 // removes blue and starts game
 initiator.addEventListener("click", () => {
@@ -51,7 +51,7 @@ target.addEventListener('click', () =>{
 });
 
 //gets timer to count avg time in MS a
-const timeInMs = target.addEventListener('click', startTimer());
+target.addEventListener('click', startTimer());
 function startTimer(){
     startTime = new Date();
     target.onclick = function(){
@@ -65,7 +65,7 @@ function getTime(startTime){
     const avgTimeToTwoDp = parseFloat(avgTime).toFixed(2);
     if(divClicks === 15){
         score.style = ""
-        score.innerHTML += ` ${avgTimeToTwoDp}ms `
+        score.innerHTML = `Congratulations Your Average Reaction Time between Clicks is: ${avgTimeToTwoDp}ms `
         restart.style.display = ""
     }
 }
