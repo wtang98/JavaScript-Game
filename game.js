@@ -39,6 +39,8 @@ function show(){
     perCent.innerHTML = `Remaining: 15`
 }
 
+// add option to select how long the game lasts 15/20/30
+
 //counts down remaining clicks until game ends
 let remain=15
 target.addEventListener('click', () =>{

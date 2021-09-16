@@ -37,7 +37,8 @@ function show() {
   perCent.style.display = "";
   instructions.style.display = "none";
   perCent.innerHTML = "Remaining: 15";
-} //counts down remaining clicks until game ends
+} // add option to select how long the game lasts 15/20/30
+//counts down remaining clicks until game ends
 
 
 var remain = 15;
