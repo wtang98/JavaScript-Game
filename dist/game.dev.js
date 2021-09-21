@@ -6,11 +6,13 @@ var area = document.querySelector(".game__play");
 var score = document.querySelector(".game__score");
 var perCent = document.querySelector(".game__percentage");
 var instructions = document.querySelector(".game__instructions");
-var restart = document.querySelector(".game__refresh"); // removes blue and starts game
+var restart = document.querySelector(".game__refresh");
+var whole = document.querySelector(".all"); // removes blue and starts game
 
 initiator.addEventListener("click", function () {
   initiator.style.display = "none";
   target.style.display = "";
+  whole.classList.add("alll");
 }); //randomly moves the target circle
 
 target.addEventListener("click", mover);

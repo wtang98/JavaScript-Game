@@ -1,4 +1,3 @@
-
 const initiator = document.querySelector("#game__play-initiator")
 const target = document.querySelector(".game__play-circle")
 const area = document.querySelector(".game__play")
@@ -6,12 +5,13 @@ const score = document.querySelector(".game__score")
 const perCent = document.querySelector(".game__percentage")
 const instructions = document.querySelector(".game__instructions")
 const restart = document.querySelector(".game__refresh")
-
+const whole = document.querySelector(".all")
 
 // removes blue and starts game
 initiator.addEventListener("click", () => {
     initiator.style.display = "none"
     target.style.display = ""
+    whole.classList.add("alll")
 });
 
 //randomly moves the target circle
@@ -40,6 +40,7 @@ function show(){
 }
 
 // add option to select how long the game lasts 15/20/30
+
 
 //counts down remaining clicks until game ends
 let remain=15
